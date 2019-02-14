@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:text="Name"
+            android:id="@+id/txt1"/>
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txt1"
+            android:layout_height="1sp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_below="@+id/textViewName"
+            android:id="@+id/txt2"/>
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_below="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_below="@+id/textViewAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="barcode"/>
+
+
+
+    <Button
+        android:id="@+id/buttonScan"
+        android:layout_below="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan barcode Code" />
+
+    <Button
+        android:id="@+id/btnsearch"
+        android:layout_below="@+id/buttonScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="search"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/btnsearch"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt3"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/sell_layout"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt3"
+        android:clickable="true"
+        android:focusable="true"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt4"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt5"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/txt5"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt6"/>
+
+ <android.support.v7.widget.RecyclerView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/searched_list">
+ </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</RelativeLayout>
